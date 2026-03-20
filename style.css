@@ -366,6 +366,15 @@ section.section-alt {
   justify-content: center;
 }
 
+.about-photo {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 40px rgba(183, 110, 121, 0.15);
+}
+
 .about-photo-placeholder {
   width: 280px;
   height: 280px;
@@ -973,6 +982,11 @@ footer {
     width: 100%;
     max-width: 260px;
     text-align: center;
+  }
+
+  .about-photo {
+    width: 200px;
+    height: 200px;
   }
 
   .about-photo-placeholder {
