@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Margarita Zelenkovsky — Collaborative Pianist, Piano Instructor, and Accompanist with nearly 40 years of experience. Relocating to the San Francisco Bay Area.">
+  <title>Margarita Zelenkovsky | Collaborative Pianist &amp; Piano Instructor</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== NAVIGATION ===================== -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="#hero" class="nav-logo">MZ</a>
+
+    <!-- Pure CSS mobile toggle -->
+    <input type="checkbox" id="nav-check" class="nav-check" aria-hidden="true">
+    <label for="nav-check" class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </label>
+
+    <ul class="nav-links">
+      <li><a href="#about"><span class="en">About</span><span class="ru">Обо мне</span></a></li>
+      <li><a href="#specializations"><span class="en">Specializations</span><span class="ru">Специализации</span></a></li>
+      <li><a href="#experience"><span class="en">Experience</span><span class="ru">Опыт</span></a></li>
+      <li><a href="#awards"><span class="en">Awards</span><span class="ru">Награды</span></a></li>
+      <li><a href="#media"><span class="en">Media</span><span class="ru">Медиа</span></a></li>
+      <li><a href="#contact"><span class="en">Contact</span><span class="ru">Контакты</span></a></li>
+      <li><a href="https://leonid.zelenkovsky.com" class="nav-partner"><span class="en">See Leonid's Portfolio</span><span class="ru">Портфолио Леонида</span></a></li>
+    </ul>
+
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" data-lang="ru" onclick="setLang('ru')">RU</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+  <div class="hero-bg-decoration">
+    <!-- Decorative musical notes -->
+    <svg class="hero-notes" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path d="M60 30v55c-3-2-7-3-11-3-8 0-15 5-15 12s7 12 15 12 15-5 15-12V50h20V30H60z" fill="var(--accent)" opacity="0.06"/>
+      <path d="M140 60v55c-3-2-7-3-11-3-8 0-15 5-15 12s7 12 15 12 15-5 15-12V80h20V60h-24z" fill="var(--accent)" opacity="0.04"/>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <h1>
+      <span class="en">Margarita Zelenkovsky</span>
+      <span class="ru">Маргарита Зеленковская</span>
+    </h1>
+    <p class="hero-title">
+      <span class="en">Collaborative Pianist &middot; Piano Instructor &middot; Accompanist</span>
+      <span class="ru">Концертмейстер &middot; Преподаватель фортепиано &middot; Аккомпаниатор</span>
+    </p>
+    <p class="hero-tagline">
+      <span class="en">Nearly 40 years of artistry, teaching, and collaboration</span>
+      <span class="ru">Почти 40 лет искусства, преподавания и творческого сотрудничества</span>
+    </p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn btn-primary">
+        <span class="en">Get in Touch</span>
+        <span class="ru">Связаться</span>
+      </a>
+      <a href="#" class="btn btn-outline">
+        <span class="en">Download Resume</span>
+        <span class="ru">Скачать резюме</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Decorative wave at bottom -->
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z" fill="var(--bg-secondary)"/>
+      <path d="M0,80 C240,20 480,100 720,50 C960,0 1200,80 1440,40" stroke="var(--accent)" stroke-width="1.5" fill="none" opacity="0.3"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about" class="section-alt">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="en">About Me</span>
+      <span class="ru">Обо мне</span>
+    </h2>
+    <div class="section-title-underline"></div>
+
+    <div class="about-grid">
+      <div class="about-image-wrapper">
+        <div class="about-photo-placeholder">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)" width="64" height="64" opacity="0.5">
+            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55C7.79 13 6 14.79 6 17s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+          </svg>
+          <p class="placeholder-text">
+            <span class="en">Photo coming soon</span>
+            <span class="ru">Фото скоро будет</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <p class="en">Accomplished pianist and music educator with nearly 40 years of experience as a piano instructor, collaborative pianist, and accompanist. Graduate of the Nizhny Novgorod State Conservatory with a degree in Piano Performance, Accompaniment, and Chamber Ensemble. Served as the accompanist and soloist for the Municipal Chamber Choir "Laudamus," earning Grand Prix at international choral competitions. Experienced sight-reader, comfortable accompanying ballet classes, choirs, and soloists. Relocating to the San Francisco Bay Area.</p>
+        <p class="ru">Пианистка и музыкальный педагог с почти 40-летним опытом работы преподавателем фортепиано, концертмейстером и аккомпаниатором. Выпускница Нижегородской государственной консерватории по специальности фортепиано, концертмейстерство и солистка камерного ансамбля. Концертмейстер Муниципального камерного хора «Лаудамус», обладатель Гран-при международных хоровых конкурсов. Отличное чтение с листа, опыт аккомпанемента балетных классов, хоров и солистов. Переезжает в район Сан-Франциско Bay Area.</p>
+
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-number">40</span>
+            <span class="stat-label">
+              <span class="en">Years</span>
+              <span class="ru">Лет</span>
+            </span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number highlight-stat">Grand Prix</span>
+            <span class="stat-label">
+              <span class="en">Winner</span>
+              <span class="ru">Победитель</span>
+            </span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">
+              <span class="en">Competition Awards</span>
+              <span class="ru">Наград конкурсов</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SPECIALIZATIONS ===================== -->
+<section id="specializations">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="en">Specializations</span>
+      <span class="ru">Специализации</span>
+    </h2>
+    <div class="section-title-underline"></div>
+
+    <div class="spec-grid">
+
+      <div class="spec-card">
+        <div class="spec-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55C7.79 13 6 14.79 6 17s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+        </div>
+        <h3><span class="en">Private Piano Instruction</span><span class="ru">Индивидуальные уроки фортепиано</span></h3>
+        <p><span class="en">Personalized lessons for all ages and levels, from beginners to advanced students preparing for competitions.</span><span class="ru">Индивидуальные занятия для всех возрастов и уровней, от начинающих до продвинутых учеников, готовящихся к конкурсам.</span></p>
+      </div>
+
+      <div class="spec-card">
+        <div class="spec-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 6H3v2h12V6zm0 4H3v2h12v-2zM3 16h8v-2H3v2zM17 6v8.18c-.31-.11-.65-.18-1-.18-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3V8h3V6h-5z"/></svg>
+        </div>
+        <h3><span class="en">Collaborative Piano</span><span class="ru">Концертмейстерство</span></h3>
+        <p><span class="en">Sensitive, responsive accompaniment for vocal and instrumental soloists, fostering true musical partnership.</span><span class="ru">Чуткий и отзывчивый аккомпанемент для вокалистов и инструменталистов, создание истинного музыкального партнёрства.</span></p>
+      </div>
+
+      <div class="spec-card">
+        <div class="spec-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+        </div>
+        <h3><span class="en">Ballet &amp; Dance Accompaniment</span><span class="ru">Аккомпанемент балетных классов</span></h3>
+        <p><span class="en">Intuitive piano accompaniment for ballet classes and dance rehearsals, matching movement with musicality.</span><span class="ru">Интуитивный фортепианный аккомпанемент балетных классов и танцевальных репетиций.</span></p>
+      </div>
+
+      <div class="spec-card">
+        <div class="spec-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3l.01 10.55c-.59-.34-1.27-.55-2-.55C7.79 13 6 14.79 6 17s1.79 4 4.01 4 3.99-1.79 3.99-4V7h4V3H12z"/></svg>
+        </div>
+        <h3><span class="en">Choir Accompaniment</span><span class="ru">Хоровой аккомпанемент</span></h3>
+        <p><span class="en">Experienced accompanist for choral ensembles, including years with the acclaimed Municipal Chamber Choir "Laudamus."</span><span class="ru">Опытный концертмейстер хоровых коллективов, включая многолетнюю работу с Муниципальным камерным хором «Лаудамус».</span></p>
+      </div>
+
+      <div class="spec-card">
+        <div class="spec-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM5 15h14v2H5zm0-4h14v2H5zm0-4h14v2H5z"/></svg>
+        </div>
+        <h3><span class="en">Sight-Reading</span><span class="ru">Чтение с листа</span></h3>
+        <p><span class="en">Exceptional sight-reading ability honed through decades of live performance, rehearsals, and accompaniment work.</span><span class="ru">Исключительные навыки чтения с листа, отточенные десятилетиями концертной практики, репетиций и аккомпанемента.</span></p>
+      </div>
+
+      <div class="spec-card">
+        <div class="spec-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+        </div>
+        <h3><span class="en">Music Notation &amp; Arranging</span><span class="ru">Нотная запись и аранжировка</span></h3>
+        <p><span class="en">Proficient in Sibelius 7.5 for professional music notation, score preparation, and arranging.</span><span class="ru">Владение программой Sibelius 7.5 для профессиональной нотной записи, подготовки партитур и аранжировки.</span></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section id="experience" class="section-alt">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="en">Experience</span>
+      <span class="ru">Опыт работы</span>
+    </h2>
+    <div class="section-title-underline"></div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">1996 &ndash; 2025</span>
+        <h3>
+          <span class="en">Piano Teacher &amp; Accompanist</span>
+          <span class="ru">Преподаватель фортепиано и концертмейстер</span>
+        </h3>
+        <p class="timeline-location">
+          <span class="en">Children's School of Arts "Baltika" &mdash; Sosnovy Bor, Russia</span>
+          <span class="ru">ДШИ «Балтика» &mdash; Сосновый Бор, Россия</span>
+        </p>
+        <p class="timeline-desc">
+          <span class="en">Piano instructor and accompanist for wind, choral, and instrumental departments. Accompanist for the Municipal Chamber Choir "Laudamus." Prepared students for regional, national, and international competitions.</span>
+          <span class="ru">Преподаватель фортепиано и концертмейстер духового, хорового и инструментального отделений. Концертмейстер Муниципального камерного хора «Лаудамус». Подготовка учеников к региональным, всероссийским и международным конкурсам.</span>
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">1985 &ndash; 1996</span>
+        <h3>
+          <span class="en">Piano Teacher</span>
+          <span class="ru">Преподаватель фортепиано</span>
+        </h3>
+        <p class="timeline-location">
+          <span class="en">Children's Music School &mdash; Sosnovy Bor, Russia</span>
+          <span class="ru">Детская музыкальная школа &mdash; Сосновый Бор, Россия</span>
+        </p>
+        <p class="timeline-desc">
+          <span class="en">Private piano instruction and ensemble coaching. Developed individualized curricula for students of varying ages and abilities.</span>
+          <span class="ru">Индивидуальное обучение фортепиано и ансамблевое музицирование. Разработка индивидуальных учебных программ для учеников разного возраста и уровня.</span>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Education -->
+    <h3 class="subsection-title">
+      <span class="en">Education</span>
+      <span class="ru">Образование</span>
+    </h3>
+
+    <div class="edu-grid">
+      <div class="edu-card">
+        <h4>
+          <span class="en">Nizhny Novgorod State Conservatory</span>
+          <span class="ru">Нижегородская государственная консерватория</span>
+        </h4>
+        <p class="edu-degree">
+          <span class="en">Piano Performance, Accompaniment, Chamber Ensemble</span>
+          <span class="ru">Фортепиано, концертмейстерство, камерный ансамбль</span>
+        </p>
+        <span class="edu-year">1985</span>
+      </div>
+      <div class="edu-card">
+        <h4>
+          <span class="en">Rimsky-Korsakov Music College</span>
+          <span class="ru">Музыкальное училище им. Римского-Корсакова</span>
+        </h4>
+        <p class="edu-degree">
+          <span class="en">Piano</span>
+          <span class="ru">Фортепиано</span>
+        </p>
+        <span class="edu-year">1979</span>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="skills-wrap">
+      <span class="skill-tag">Piano Performance</span>
+      <span class="skill-tag">Accompaniment</span>
+      <span class="skill-tag">Sight-Reading</span>
+      <span class="skill-tag">Chamber Ensemble</span>
+      <span class="skill-tag">Ballet Accompaniment</span>
+      <span class="skill-tag">Sibelius 7.5</span>
+      <span class="skill-tag">Choir Accompaniment</span>
+      <span class="skill-tag">Online Teaching</span>
+      <span class="skill-tag">Vocal Coaching</span>
+      <span class="skill-tag">Competition Prep</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== AWARDS ===================== -->
+<section id="awards">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="en">Awards &amp; Recognition</span>
+      <span class="ru">Награды и достижения</span>
+    </h2>
+    <div class="section-title-underline"></div>
+
+    <div class="awards-grid">
+
+      <div class="award-card">
+        <span class="award-year-badge">2022</span>
+        <h3><span class="en">Commendation, Sosnoborsk Council</span><span class="ru">Благодарность Совета депутатов Соснового Бора</span></h3>
+        <p><span class="en">Commendation from the Chairman of the Sosnoborsk Council of Deputies for outstanding contributions to culture and arts education.</span><span class="ru">Благодарность председателя Совета депутатов Соснового Бора за выдающийся вклад в культуру и художественное образование.</span></p>
+      </div>
+
+      <div class="award-card">
+        <span class="award-year-badge">2019</span>
+        <h3><span class="en">Kapella of Saint Petersburg</span><span class="ru">Капелла Санкт-Петербурга</span></h3>
+        <p><span class="en">Diploma of Artistic Director, Kapella of Saint Petersburg (V.A. Chernushenko Award). Awarded Highest Professional Qualification Category.</span><span class="ru">Диплом Капеллы Санкт-Петербурга (премия В.А. Чернушенко). Присвоена Высшая квалификационная категория.</span></p>
+      </div>
+
+      <div class="award-card">
+        <span class="award-year-badge">2022</span>
+        <h3><span class="en">Grand Prix with Choir "Laudamus"</span><span class="ru">Гран-при с хором «Лаудамус»</span></h3>
+        <p><span class="en">Grand Prix at international choral competition as accompanist for the Municipal Chamber Choir "Laudamus."</span><span class="ru">Гран-при международного хорового конкурса в качестве концертмейстера Муниципального камерного хора «Лаудамус».</span></p>
+      </div>
+
+      <div class="award-card">
+        <span class="award-year-badge"><span class="en">Multiple</span><span class="ru">Многокр.</span></span>
+        <h3><span class="en">International Competitions</span><span class="ru">Международные конкурсы</span></h3>
+        <p><span class="en">Multiple awards from prestigious international festivals and competitions, including "Sforzando," "Golden Deka," and "Kamerton."</span><span class="ru">Многочисленные награды престижных международных фестивалей и конкурсов: «Сфорцандо», «Золотая дека», «Камертон».</span></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MEDIA ===================== -->
+<section id="media" class="section-alt">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="en">Media</span>
+      <span class="ru">Медиа</span>
+    </h2>
+    <div class="section-title-underline"></div>
+
+    <div class="video-grid">
+
+      <div class="video-item">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/Rl4O74UItYg" title="Piano Concert — Where the Piano Reigns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p class="video-caption"><span class="en">Piano Concert — Where the Piano Reigns</span><span class="ru">Концерт — «Там, где царит рояль»</span></p>
+      </div>
+
+      <div class="video-item">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/g_T-hk6uo3Y" title="J. Sibelius — Flowers, Op. 85" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p class="video-caption"><span class="en">J. Sibelius — Flowers, Op. 85</span><span class="ru">Я. Сибелиус — «Цветы», Op. 85</span></p>
+      </div>
+
+      <div class="video-item">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/TqkS-S8j7K0" title="S. Prokofiev — Mercutio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p class="video-caption"><span class="en">S. Prokofiev — Mercutio</span><span class="ru">С. Прокофьев — «Меркуцио»</span></p>
+      </div>
+
+      <div class="video-item">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/oE4QaHnBGi0" title="Project-Concert — Rachmaninov in Ivanovka" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p class="video-caption"><span class="en">Project-Concert — Rachmaninov in Ivanovka</span><span class="ru">Проект-концерт — «Рахманинов в Ивановке»</span></p>
+      </div>
+
+      <div class="video-item">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/MUVuFVZdbnk" title="V. Gavrilin — Polka" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p class="video-caption"><span class="en">V. Gavrilin — Polka</span><span class="ru">В. Гаврилин — «Полька»</span></p>
+      </div>
+
+      <div class="video-item">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/-mqcdATdxGg" title="S. Slonimsky — Northern Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p class="video-caption"><span class="en">S. Slonimsky — Northern Song</span><span class="ru">С. Слонимский — «Северная песня»</span></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="en">Contact</span>
+      <span class="ru">Контакты</span>
+    </h2>
+    <div class="section-title-underline"></div>
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+        <div class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </div>
+        <h3><span class="en">Email</span><span class="ru">Эл. почта</span></h3>
+        <a href="mailto:zelenkovskayarita@gmail.com">zelenkovskayarita@gmail.com</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <h3><span class="en">Location</span><span class="ru">Местоположение</span></h3>
+        <p><span class="en">Relocating to San Francisco Bay Area, CA</span><span class="ru">Переезжает в район Сан-Франциско Bay Area, Калифорния</span></p>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+        </div>
+        <h3><span class="en">Resume</span><span class="ru">Резюме</span></h3>
+        <a href="#" class="btn btn-outline btn-sm">
+          <span class="en">Download PDF</span>
+          <span class="ru">Скачать PDF</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="container">
+    <p class="footer-name">
+      <span class="en">Margarita Zelenkovsky</span>
+      <span class="ru">Маргарита Зеленковская</span>
+    </p>
+    <p class="footer-auth">
+      <span class="en">Authorized to work in the United States</span>
+      <span class="ru">Имеет право на работу в США</span>
+    </p>
+    <a href="https://leonid.zelenkovsky.com" class="footer-partner">
+      <span class="en">See Leonid's Portfolio</span>
+      <span class="ru">Портфолио Леонида</span>
+    </a>
+    <p class="footer-copy">&copy; 2026 Margarita Zelenkovsky.</p>
+  </div>
+</footer>
+
+<!-- ===================== LANGUAGE TOGGLE SCRIPT ===================== -->
+<script>
+function setLang(lang) {
+  document.documentElement.setAttribute('data-lang', lang);
+  localStorage.setItem('preferred-lang', lang);
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  const activeBtn = document.querySelector('.lang-btn[data-lang="'+lang+'"]');
+  if (activeBtn) activeBtn.classList.add('active');
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('preferred-lang') || 'en';
+  setLang(saved);
+});
+</script>
+
+</body>
+</html>
