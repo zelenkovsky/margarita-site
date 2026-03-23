@@ -6,16 +6,16 @@
 
 /* ---------- CSS Variables ---------- */
 :root {
-  --bg-primary: #1a0f1e;
-  --bg-secondary: #221630;
-  --bg-card: #2a1c3a;
-  --accent: #b76e79;
-  --accent-light: #d4919b;
-  --accent-dark: #8e4f58;
-  --text-primary: #e8e6e3;
-  --text-secondary: #a0a0b0;
+  --bg-primary: #1a1210;
+  --bg-secondary: #221a16;
+  --bg-card: #2e2220;
+  --accent: #c49a6c;
+  --accent-light: #dbb78e;
+  --accent-dark: #9a7550;
+  --text-primary: #e8e2dc;
+  --text-secondary: #b0a89e;
   --text-heading: #ffffff;
-  --border: #3a2a4a;
+  --border: #3e322c;
 }
 
 /* ---------- Language switching ---------- */
@@ -99,10 +99,10 @@ section.section-alt {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(26, 15, 30, 0.9);
+  background: rgba(26, 18, 16, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(58, 42, 74, 0.5);
+  border-bottom: 1px solid rgba(62, 50, 44, 0.5);
 }
 
 .nav-container {
@@ -208,7 +208,9 @@ section.section-alt {
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
-  z-index: 1001;
+  background: none;
+  border: none;
+  padding: 4px;
 }
 
 .nav-toggle span {
@@ -219,8 +221,72 @@ section.section-alt {
   transition: 0.3s;
 }
 
-.nav-check {
+/* Mobile menu overlay (outside navbar) */
+.mobile-menu {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1a1210;
+  z-index: 10000;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.mobile-menu.active {
+  display: flex;
+}
+
+.mobile-close {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  font-size: 2rem;
+  color: var(--text-primary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  line-height: 1;
+}
+
+.mobile-close:hover {
+  color: var(--accent);
+}
+
+.mobile-menu-links {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobile-menu-links a {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
+
+.mobile-menu-links a:hover {
+  color: var(--accent);
+}
+
+.mobile-lang-toggle {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.mobile-lang-toggle .lang-btn {
+  padding: 8px 16px;
+  font-size: 0.85rem;
 }
 
 /* ---------- Hero ---------- */
@@ -231,9 +297,33 @@ section.section-alt {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(135deg, var(--bg-primary) 0%, #2a1535 40%, var(--bg-primary) 100%);
+  background: var(--bg-primary);
   overflow: hidden;
   padding: 6rem 2rem 4rem;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('hero-bg.jpg') center center / cover no-repeat;
+  background-attachment: fixed;
+  opacity: 0.35;
+  z-index: 0;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(26,18,16,0.3) 0%, rgba(26,18,16,0.7) 60%, var(--bg-primary) 100%);
+  z-index: 1;
 }
 
 .hero-bg-decoration {
@@ -256,7 +346,7 @@ section.section-alt {
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   max-width: 700px;
 }
 
@@ -302,6 +392,7 @@ section.section-alt {
   right: 0;
   height: 120px;
   pointer-events: none;
+  z-index: 2;
 }
 
 .hero-wave svg {
@@ -372,7 +463,7 @@ section.section-alt {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--accent);
-  box-shadow: 0 0 40px rgba(183, 110, 121, 0.15);
+  box-shadow: 0 0 40px rgba(196, 154, 108, 0.15);
 }
 
 .about-photo-placeholder {
@@ -386,7 +477,7 @@ section.section-alt {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  box-shadow: 0 0 40px rgba(183, 110, 121, 0.15);
+  box-shadow: 0 0 40px rgba(196, 154, 108, 0.15);
 }
 
 .placeholder-text {
@@ -883,37 +974,15 @@ footer {
 /* ---------- Responsive: 768px ---------- */
 @media (max-width: 768px) {
   .nav-links {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(26, 15, 30, 0.98);
-    flex-direction: column;
-    padding: 5rem 2rem 2rem;
-    gap: 1.5rem;
-    align-items: center;
-    justify-content: center;
-    transform: translateX(100%);
-    transition: transform 0.35s ease;
-  }
-
-  .nav-check:checked ~ .nav-links {
-    transform: translateX(0);
+    display: none;
   }
 
   .nav-toggle {
     display: flex;
   }
 
-  .nav-check:checked ~ .nav-toggle span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-  .nav-check:checked ~ .nav-toggle span:nth-child(2) {
-    opacity: 0;
-  }
-  .nav-check:checked ~ .nav-toggle span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+  .lang-toggle {
+    display: none;
   }
 
   .hero-content h1 {
@@ -963,12 +1032,23 @@ footer {
   }
 
   .lang-toggle {
-    margin-left: 0.5rem;
+    display: none;
+  }
+
+  .mobile-lang-item {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    margin-top: 1rem;
   }
 }
 
 /* ---------- Responsive: 480px ---------- */
 @media (max-width: 480px) {
+  .hero::before {
+    background-attachment: scroll;
+  }
+
   .hero-content h1 {
     font-size: 2rem;
   }
