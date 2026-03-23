@@ -1,0 +1,20 @@
+User-agent: Yandex
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: YandexImages
+Disallow: /
+
+User-agent: YandexMedia
+Disallow: /
+
+User-agent: Mail.Ru
+Disallow: /
+
+User-agent: MailRuBot
+Disallow: /
+
+User-agent: *
+Allow: /
